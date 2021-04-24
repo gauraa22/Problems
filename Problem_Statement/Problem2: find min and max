@@ -1,0 +1,5 @@
+Find min and max in an array using single Loop.
+Input: {1,2,3,-1,-2,10,8,9}
+Output:
+    - min: -2
+    - max: 10
