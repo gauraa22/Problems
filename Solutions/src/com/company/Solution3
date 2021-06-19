@@ -1,0 +1,75 @@
+
+1.
+	I-Value		J-Value		A[i] < A[j]		
+	   0		   0		   False			   
+	   1		   0		   True				   
+	   1		   1		   False		          
+	   2		   1		   True				   
+	   2		   2		   False			   
+	   3		   2		   True				   
+	   3		   3		   False
+	   .		   .		   ...
+	   .		   .		   ...
+	   .		   .		   ...
+	   .		   .		   ...			
+	 
+Variable j is not initialized for each value of variable i. Hence, the inner j++ will be executed at most N times.
+The i loop also runs N times. So overall Complexity will be N because the maximum time the code will execute will be 2*N. 
+So O(2*N) = O(N)
+
+2.
+	I-Value		Output
+	   0		   N
+	   1		   N-1
+	   2		   N-2
+	   3		   N-3
+	   .		   ...
+	   .		   ...
+	   .		   ...
+	   .		   ...
+	   N-2		   N-(N-2)=2
+	   N-1		   N-(N-1)=1
+So, Basically it is in the form of 1+2+3+4+5....+(N-1)+N=N(N+1)/2
+     TIME COMPLEXITY=N^2
+
+
+3.
+	I-Value		Output
+	   N		   N
+	   N/2		   N/2
+	   N/4		   N/4
+	   N/8		   N/8
+	   .		   ...
+	   .		   ...
+	   .		   ...
+	   .		   ...
+	   2		   2
+	   1		   1
+	
+	it is in the form of N+(N/2)+(N/4)+(N/8)+....+2+1
+	= N * (1 + 1/2 + 1/4 + 1/8 + ...)
+	according to GP formula,
+		S=a/1-r
+		 =1/(1-1/2)=2 
+	=2*N
+ 	
+	Hence 
+		TIME COMPLEXITY=O(N)
+
+4.
+	N=20
+	I-Value		Output
+	   20		   20/(2^1)
+	   10		   20/(2^2)
+	   5		   20/(2^3)
+	   .		   ...
+	   2		   20/(2^4)
+	   .		   ...
+	   1		   20/(2^k)
+
+	20/2^k  >= 1
+	N/2^k   >= 1
+	N >= 2^k
+	logN >= k
+		TIME COMPLEXITY= O(logN)
+	
