@@ -1,0 +1,27 @@
+Given only argument A an Array of Integers.
+Output Format
+
+Return an Integer X, i.e number of elements.
+Constraints
+
+1 <= N <= 1e5
+1 <= A[i] <= 1e6
+-------------------------------------
+For Example
+
+Example Input:
+    A = [1, 2, 3]
+
+Example Output:
+    1
+
+Explanation:
+    only 2 have a strictly smaller and strictly greater element, 1 and 3 respectively.
+
+
+--------------------
+Test input :
+A : [ 241, 710, 751, 904, 264, 955, 413, 163, 914, 173, 940, 164, 494, 545, 750, 685, 665, 619, 99, 953, 759, 783, 534, 706, 771, 570, 471, 543, 658, 674, 634, 766, 931, 40, 244, 209, 360, 517, 962, 420, 155, 711, 845, 646, 117, 641, 458, 790, 620, 46, 837, 560, 374, 510, 133, 214, 322, 275, 342, 460, 642, 153, 751, 317, 71, 8, 256, 195, 256, 469, 16, 986, 339, 753, 773, 921, 638, 529, 333, 73, 393, 985, 846, 175, 548, 694, 560, 174, 710, 478, 316 ]
+
+
+op: 89 
